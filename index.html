@@ -463,6 +463,8 @@ Error message and password prompt
 
 <li>list</li>
 
+<li>mutable, immutable</li>
+
 <li>object</li>
 
 <li>programming</li>
@@ -472,6 +474,8 @@ Error message and password prompt
 <li>PyPI</li>
 
 <li>Python</li>
+
+<li>structured variables</li>
 
 <li>sub</li>
 
@@ -10359,7 +10363,7 @@ Error message and password prompt
 <div created="20200614005135974" creator="D" modified="20200614005137325" modifier="Danwee" title="$:/status/UserName">
 <pre>Danweel</pre>
 </div>
-<div created="20200614155635804" creator="Danweel" list="index Python PyPI [[index value]] [[index operator]] syntax [[definite loops]] [[for loop]] object properties attribute class callable list sub constants variables collection algorithm [[data structure]] programming" modified="20200614220846662" modifier="Danweel" title="$:/StoryList">
+<div created="20200614155635804" creator="Danweel" list="index Python PyPI [[index value]] [[index operator]] syntax [[definite loops]] [[for loop]] object properties attribute class callable list [[mutable, immutable]] sub constants variables collection algorithm [[data structure]] [[structured variables]] programming" modified="20200614231626883" modifier="Danweel" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10420,7 +10424,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200614005148974" creator="Danweel" modified="20200614220826317" modifier="Danweel" title="$:/temp/NewTagName">
+<div created="20200614005148974" creator="Danweel" modified="20200614225459878" modifier="Danweel" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20200614144742032" creator="Danweel" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20200614144742032" modifier="Danweel" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.22">
@@ -11370,8 +11374,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200614144742032" creator="Danweel" dependents="" description="Basic theme" modified="20200614144742032" modifier="Danweel" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.22">
 <pre></pre>
 </div>
-<div created="20200614025202041" creator="Danweel" modified="20200614161919884" modifier="Danweel" title="$:/temp/search">
-<pre>index</pre>
+<div created="20200614025202041" creator="Danweel" modified="20200614232927964" modifier="Danweel" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20200614144742024" creator="Danweel" modified="20200614144742024" modifier="Danweel" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
@@ -11538,7 +11542,7 @@ In Java and C++ the class attribute is similar to [[static member]].
 
 See [[class]].</pre>
 </div>
-<div created="20200614220138540" creator="Danweel" modified="20200614220829208" modifier="Danweel" tags="Basic Glossary [[stack overflow]] Coding" title="callable">
+<div created="20200614220138540" creator="Danweel" modified="20200614232550320" modifier="Danweel" tags="Basic Glossary [[stack overflow]] Coding" title="callable">
 <pre>A callable is anything that can be called. It is an object allows you to use round parenthesis ( ) and eventually pass some parameters, just like functions.
 
 Every time you define a [[function]] [[Python]] creates a callable [[object]]. It is something that can be called like a [[method]].
@@ -11553,7 +11557,8 @@ class a(object):
 func = a()
 ```
 
-# or ... 
+or ... 
+
 
 ```
 def func(*args):
@@ -11566,24 +11571,63 @@ You could use this method instead of methods like doit or run, I think it's just
 See [[function]]
 </pre>
 </div>
-<div created="20200614212759150" creator="Danweel" modified="20200614220050544" modifier="Danweel" tags="Basic [[Code sample]] Glossary [[website source]]" title="class">
+<div created="20200614212759150" creator="Danweel" modified="20200614232616687" modifier="Danweel" tags="Basic [[Code sample]] Glossary [[website source]]" title="class">
 <pre>A Python class is created by a [[class definition]], has
 an associated [[name space]],
 supports [[attribute reference]],
 and is [[callable]].
 
-A Class is like an object constructor or blueprint for creating objects.
+A [[class]] is like an [[object]] constructor or blueprint for creating objects.
+
 
 ```
 class MyClass
     x = 5
 ```
+
 then, create an [[object]]:
+
 
 ```
 p1 = MyClass()
 print(p1.x)
 ```
+
+
+```
+class Person:
+    &quot;This is a person class&quot;
+    age = 10
+
+    def greet(self):
+        print('Hello')
+```
+
+`Output: 10
+`
+
+```
+print(Person.age)
+```
+
+`Output: &lt;function Person.greet&gt;
+`
+
+```
+print(Person.greet)
+```
+
+`Output: 'This is my second class'
+`
+
+```
+print(Person.__doc__)
+```
+
+`10
+&lt;function Person.greet at 0x7fc78c6e8160&gt;
+This is a person class
+`
 
 See [[object]]</pre>
 </div>
@@ -11596,11 +11640,11 @@ Contrast to:
 
 </pre>
 </div>
-<div created="20200614030048204" creator="Danweel" modified="20200614030354312" modifier="Danweel" tags="Basic Coding Glossary" title="constants">
-<pre>Definition</pre>
+<div created="20200614030048204" creator="Danweel" modified="20200614231510082" modifier="Danweel" tags="Basic Coding Glossary wikipedia [[umbrella term]]" title="constants">
+<pre>A constant is a value that cannot be altered by the program durig normal execution. </pre>
 </div>
-<div created="20200614023649009" creator="Danweel" modified="20200614031522579" modifier="Danweel" tags="Coding Glossary Py4E Basic" title="data structure">
-<pre>A particular way of organizing data in a computer and are 'structured variables'.</pre>
+<div created="20200614023649009" creator="Danweel" modified="20200614231623739" modifier="Danweel" tags="Coding Glossary Py4E Basic" title="data structure">
+<pre>A particular way of organizing data in a computer and are [[structured variables]].</pre>
 </div>
 <div created="20200614144005957" creator="Danweel" modified="20200614221531311" modifier="Danweel" tags="Coding Basic Glossary [[Code sample]]" title="definite loops">
 <pre>
@@ -11731,6 +11775,11 @@ A list can also be empty:
 ```
 `[]`</pre>
 </div>
+<div created="20200614224625421" creator="Danweel" modified="20200614225250001" modifier="Danweel" tags="Basic Coding wikipedia" title="mutable, immutable">
+<pre>In object-oriented and functional programming, an immutable object (unchangeable object) is an object whose state cannot be modified after is created. This is in contrast to a mutable object (changeable object), which can be modified after it is created.
+
+In some cases, an object is considered immutable even if some internally used attributes change, but the object's state appears unchanging from an external point of view.</pre>
+</div>
 <div created="20200614025804017" creator="Danweel" modified="20200614213203759" modifier="Danweel" tags="Glossary Coding Basic" title="object">
 <pre>Almost everything in [[Python]] is an [[object]], with its [[properties]] and [[methods]].
 
@@ -11739,8 +11788,8 @@ See [[class]]</pre>
 <div created="20200614010600621" creator="Danweel" modified="20200614030441961" modifier="Danweel" tags="Coding Glossary Basic" title="programming">
 <pre>Definition</pre>
 </div>
-<div created="20200614213359096" creator="Danweel" modified="20200614214612829" modifier="Danweel" tags="Basic Glossary Coding" title="properties">
-<pre>Properties are a special kind of attribute. With a property you have complete control on its getter, setter and deleter methods, which you don't have (if not using caveats) with an attribute. In general speaking terms a property and an attribute are the same thing. However, there is a property decorator in Python which provides getter/setter access to an attribute (or other data).
+<div created="20200614213359096" creator="Danweel" modified="20200614232913656" modifier="Danweel" tags="Basic Glossary Coding" title="properties">
+<pre>Properties are a special kind of [[attribute]]. With a property you have complete control on its getter, setter and deleter methods, which you don't have (if not using caveats) with an [[attribute]]. In general speaking terms a [[property]] and an [[attribute]] are the same thing. However, there is a [[property decorator]] in [[Python]] which provides getter/setter access to an [[attribute]] (or other data).
 
 ```
 class C(object):
@@ -11748,7 +11797,7 @@ class C(object):
         self._x = None
 ```
 
-#C._x is an attribute
+C._x is an attribute
 
 ```
 @property
@@ -11761,7 +11810,7 @@ class C(object):
         return self._x
 ```
 
-# C._x is a property   This is the getter method
+C._x is a property   This is the getter method
 
 ```
 
@@ -11805,8 +11854,11 @@ Python's design philosophy emphasizes code readability with its notable use of s
 Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming. Python is often described as a &quot;batteries included&quot; language due to its comprehensive standard library.
 </pre>
 </div>
-<div created="20200614155640853" creator="Danweel" modified="20200614155942353" modifier="Danweel" tags="Glossary Basic [[Code sample]] Py4E" title="sub">
-<pre>The name for the position in a list:
+<div created="20200614231647988" creator="Danweel" modified="20200614231651112" modifier="Danweel" tags="Basic Coding [[umbrella term]]" title="structured variables">
+<pre>Definition</pre>
+</div>
+<div created="20200614155640853" creator="Danweel" modified="20200614225300393" modifier="Danweel" tags="Glossary Basic [[Code sample]] Py4E" title="sub">
+<pre>The name for the position in a [[list]]:
 
 ```
 [1, 2, 3, 4, 5]
