@@ -431,6 +431,10 @@ Error message and password prompt
 
 <li>programming</li>
 
+<li>sub</li>
+
+<li>syntax</li>
+
 <li>variables</li>
 
 </ul>
@@ -10278,12 +10282,12 @@ Error message and password prompt
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
 <div created="20200614005135974" creator="D" modified="20200614005137325" modifier="Danwee" title="$:/status/UserName">
 <pre>Danweel</pre>
 </div>
-<div created="20200614025204360" creator="Danweel" list="[[definite loops]] [[for loop]] object list constants variables collection algorithm [[data structure]] programming $:/ControlPanel GettingStarted" modified="20200614030651608" modifier="Danweel" title="$:/StoryList">
+<div created="20200614155635804" creator="Danweel" list="syntax [[definite loops]] [[for loop]] object list sub constants variables collection algorithm [[data structure]] programming" modified="20200614155635804" modifier="Danweel" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10299,19 +10303,19 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///Users/danweel/Documents/GitHub/Danweel.github.io/index.html&quot;
+            &quot;text&quot;: &quot;https://danweel.github.io/&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;danweel.github.io&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;danweel.github.io&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;file:&quot;
+            &quot;text&quot;: &quot;https:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -10319,7 +10323,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/Users/danweel/Documents/GitHub/Danweel.github.io/index.html&quot;
+            &quot;text&quot;: &quot;/&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -10327,7 +10331,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;file://&quot;
+            &quot;text&quot;: &quot;https://danweel.github.io&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
@@ -11465,9 +11469,8 @@ Contrast to:
 <div created="20200614023649009" creator="Danweel" modified="20200614031522579" modifier="Danweel" tags="Coding Glossary Py4E Basic" title="data structure">
 <pre>A particular way of organizing data in a computer and are 'structured variables'.</pre>
 </div>
-<div created="20200614144005957" creator="Danweel" modified="20200614144724243" modifier="Danweel" tags="Coding Basic Glossary [[Code sample]]" title="definite loops">
+<div created="20200614144005957" creator="Danweel" modified="20200614155246577" modifier="Danweel" tags="Coding Basic Glossary [[Code sample]]" title="definite loops">
 <pre>
-
 
 ```
 friends = ['Joseph', 'Glenn', 'Sally']
@@ -11476,16 +11479,27 @@ for friend in friends :
 print('Done!')
 ```
 
+
 ```
 z = ['Joseph', 'Glenn', 'Sally']
 for x in z :
     print('Happy New Year:', x)
 print('Done!')
-```</pre>
+```
+
+`Happy New Year: Joseph
+Happy New Year: Joseph
+Happy New Year: Joseph
+Done!
+`
+
+
+See [[list]]
+See [[for loop]]
+</pre>
 </div>
 <div created="20200614030959901" creator="Danweel" modified="20200614031233804" modifier="Danweel" tags="Coding Py4E Basic [[Code sample]]" title="for loop">
 <pre>
-
 ```
 for i in [5, 4, 3, 2, 1] :
     print(i)
@@ -11502,7 +11516,7 @@ print('Blastoff!')
 
 </pre>
 </div>
-<div created="20200614025114061" creator="Danweel" modified="20200614031408937" modifier="Danweel" tags="collection Basic Glossary Py4E" title="list">
+<div created="20200614025114061" creator="Danweel" modified="20200614155630121" modifier="Danweel" tags="collection Basic Glossary Py4E" title="list">
 <pre>List [[constants]] are surrounded by square brackets and the elements in the list are separated by commas.
 
 
@@ -11514,7 +11528,7 @@ print('Blastoff!')
 `['red', 'yellow', 'blue']`
 
 
-Or a mix:
+You don't need to have the same type of data in a list:
 
 ```
 &gt;&gt;&gt; print(['red', 24, 98.6])
@@ -11528,7 +11542,7 @@ This includes other lists:
 ```
 &gt;&gt;&gt; print([1, [5, 6], 7])
 ```
-Note that [5, 6] together is in the 1 position.
+Note that [5, 6] together is in the [[sub]] 1 position.
 
 
 A list can also be empty:
@@ -11543,6 +11557,18 @@ A list can also be empty:
 </div>
 <div created="20200614010600621" creator="Danweel" modified="20200614030441961" modifier="Danweel" tags="Coding Glossary Basic" title="programming">
 <pre>Definition</pre>
+</div>
+<div created="20200614155640853" creator="Danweel" modified="20200614155942353" modifier="Danweel" tags="Glossary Basic [[Code sample]] Py4E" title="sub">
+<pre>The name for the position in a list:
+
+```
+[1, 2, 3, 4, 5]
+```
+
+The first position is actually a 0, making &quot;2&quot; sub 1.</pre>
+</div>
+<div created="20200614155814856" creator="Danweel" modified="20200614155858223" modifier="Danweel" tags="Coding Basic Glossary" title="syntax">
+<pre>The grammar of a coding language. Syntax changes but the concepts don't. </pre>
 </div>
 <div created="20200614024746968" creator="Danweel" modified="20200614031434105" modifier="Danweel" tags="Coding Basic Glossary Py4E" title="variables">
 <pre>Variables have one value in them - when we put a new value in the variable, the old value is overwritten:
