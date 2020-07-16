@@ -467,6 +467,8 @@ Error message and password prompt
 
 <li>Draft of 'PyPI' by Danweel</li>
 
+<li>Draft of 'text alignment' by Danweel</li>
+
 <li>for loop</li>
 
 <li>function</li>
@@ -10397,7 +10399,7 @@ Error message and password prompt
 <div created="20200614005135974" creator="D" modified="20200614005137325" modifier="Danwee" title="$:/status/UserName">
 <pre>Danweel</pre>
 </div>
-<div created="20200614155635804" creator="Danweel" list="[[text alignment]] [[merge format(), f-string, format string literal]] [[literal string, string literal]] literal [[branch code execution based on user input]] [[assertion error]] object function method [[index operator]] operator [[arithmetic operator]] [[logical operator]] string concatenate [[concatenating strings]] programming" modified="20200618014240661" modifier="Danweel" title="$:/StoryList">
+<div list="[[Draft of 'text alignment' by Danweel]] [[merge format(), f-string, format string literal]] [[literal string, string literal]] literal [[branch code execution based on user input]] [[assertion error]] object function method [[index operator]] operator [[arithmetic operator]] [[logical operator]] string concatenate [[concatenating strings]] programming" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200615182606262" creator="Danweel" modified="20200615182612151" modifier="Danweel" title="$:/temp/advancedsearch">
@@ -10461,7 +10463,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200614005148974" creator="Danweel" modified="20200618015300936" modifier="Danweel" title="$:/temp/NewTagName">
+<div created="20200614005148974" creator="Danweel" modified="20200716130652649" modifier="Danweel" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20200614144742032" creator="Danweel" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20200614144742032" modifier="Danweel" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.22">
@@ -11572,7 +11574,6 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 </div>
 <div created="20200615011007225" creator="Danweel" modified="20200615182523432" modifier="Danweel" tags="Basic [[Code sample]] Coding [[website source]] Glossary" title="arithmetic operator">
 <pre>
-
 Python:
 Let x = 15 and y = 4
 
@@ -11713,7 +11714,6 @@ See [[class]].</pre>
 </div>
 <div created="20200618013054193" creator="Danweel" modified="20200618013928020" modifier="Danweel" tags="Coding [[Code sample]] challenge Basic" title="branch code execution based on user input">
 <pre>
-
 
 ```
 response = input(&quot;Would you like to continue?&quot;)
@@ -11962,7 +11962,6 @@ See [[built-in type]]
 </div>
 <div created="20200614144005957" creator="Danweel" modified="20200614221531311" modifier="Danweel" tags="Coding Basic Glossary [[Code sample]]" title="definite loops">
 <pre>
-
 ```
 friends = ['Joseph', 'Glenn', 'Sally']
 for friend in friends :
@@ -11993,9 +11992,31 @@ See [[for loop]]
 <div modified="20200614165722762" modifier="Danweel" title="Draft of 'PyPI' by Danweel">
 <pre></pre>
 </div>
-<div created="20200614030959901" creator="Danweel" modified="20200614212422108" modifier="Danweel" tags="Coding Py4E Basic [[Code sample]]" title="for loop">
-<pre>
+<div created="20200618015504149" creator="Danweel" draft.of="text alignment" draft.title="text alignment" modified="20200716130701610" modifier="Danweel" tags="Coding python formatting Py4E" title="Draft of 'text alignment' by Danweel">
+<pre>```
+value = 'hi'
+
+print(f'.{value:&lt;25}.')
+print(f'.{value:&gt;25}.')
+print(f'.{value:^25}.')
+print(f'.{value:-^25}.')
 ```
+
+`
+.hi                       .
+.                       hi.
+.           hi            .
+.-----------hi------------.
+`
+
+A format specifier uses a colon symbol (:) after the variable name, to specify how that value should be formatted.
+In the first f-string, we use the less-than symbol (&lt;) to align the text to the left of a string that is 25 total characters wide. The string hi occupies two of the 25 total characters. We add period symbols (.) on the left and right of the replacement field, to help us see the total width of the string.
+In the second f-string, we use the greater-than symbol (&gt;) to align the text to the right of a string that is 25 total characters wide.
+In the third f-string, we use the caret symbol (^) to center the text in the middle of a string that is 25 total characters wide.
+In the fourth f-string, we use the caret symbol (^) again. But this time, we preface it with a single dash symbol (-) to use instead of an empty space to fill the remaining width of the string.</pre>
+</div>
+<div created="20200614030959901" creator="Danweel" modified="20200614212422108" modifier="Danweel" tags="Coding Py4E Basic [[Code sample]]" title="for loop">
+<pre>```
 for i in [5, 4, 3, 2, 1] :
     print(i)
 print('Blastoff!')
@@ -12119,7 +12140,6 @@ See [[string]]</pre>
 <div created="20200615010627170" creator="Danweel" modified="20200616223115279" modifier="Danweel" tags="Basic Coding Glossary Py4E" title="logical operator">
 <pre>
 
-
 [[Python]]
 List of logical operators
 
@@ -12135,7 +12155,6 @@ See [[operator]]</pre>
 </div>
 <div created="20200618014810409" creator="Danweel" modified="20200618015710416" modifier="Danweel" tags="Coding Glossary [[Code sample]] Basic" title="merge format(), f-string, format string literal">
 <pre>
-
 ```
 medicine = 'Coughussin'
 dosage = 5
