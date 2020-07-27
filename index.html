@@ -457,6 +457,8 @@ Error message and password prompt
 
 <li>concatenating strings</li>
 
+<li>conditional</li>
+
 <li>constants</li>
 
 <li>data structure</li>
@@ -467,9 +469,15 @@ Error message and password prompt
 
 <li>Draft of 'PyPI' by Danweel</li>
 
+<li>elif</li>
+
+<li>else</li>
+
 <li>for loop</li>
 
 <li>function</li>
+
+<li>if</li>
 
 <li>index</li>
 
@@ -10397,7 +10405,7 @@ Error message and password prompt
 <div created="20200614005135974" creator="D" modified="20200614005137325" modifier="Danwee" title="$:/status/UserName">
 <pre>Danweel</pre>
 </div>
-<div list="[[text alignment]] [[merge format(), f-string, format string literal]] [[literal string, string literal]] literal [[branch code execution based on user input]] [[assertion error]] object function method [[index operator]] operator [[arithmetic operator]] [[logical operator]] string concatenate [[concatenating strings]] programming" title="$:/StoryList">
+<div created="20200727130553317" creator="Danweel" list="conditional" modified="20200727131317930" modifier="Danweel" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200615182606262" creator="Danweel" modified="20200615182612151" modifier="Danweel" title="$:/temp/advancedsearch">
@@ -10416,19 +10424,19 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;https://danweel.github.io/&quot;
+            &quot;text&quot;: &quot;file:///Users/danweel/Documents/GitHub/Danweel.github.io/index.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;danweel.github.io&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;danweel.github.io&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;https:&quot;
+            &quot;text&quot;: &quot;file:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -10436,7 +10444,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/&quot;
+            &quot;text&quot;: &quot;/Users/danweel/Documents/GitHub/Danweel.github.io/index.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -10444,7 +10452,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;https://danweel.github.io&quot;
+            &quot;text&quot;: &quot;file://&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
@@ -11411,8 +11419,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200614144742032" creator="Danweel" dependents="" description="Basic theme" modified="20200614144742032" modifier="Danweel" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.22">
 <pre></pre>
 </div>
-<div created="20200614025202041" creator="Danweel" modified="20200716132614236" modifier="Danweel" title="$:/temp/search">
-<pre></pre>
+<div created="20200614025202041" creator="Danweel" modified="20200727131057543" modifier="Danweel" title="$:/temp/search">
+<pre>conditional</pre>
 </div>
 <div created="20200614144742024" creator="Danweel" modified="20200614144742024" modifier="Danweel" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
@@ -11709,9 +11717,8 @@ In Java and C++ the class attribute is similar to [[static member]].
 
 See [[class]].</pre>
 </div>
-<div created="20200618013054193" creator="Danweel" modified="20200618013928020" modifier="Danweel" tags="Coding [[Code sample]] challenge Basic" title="branch code execution based on user input">
-<pre>
-```
+<div created="20200618013054193" creator="Danweel" modified="20200727130522771" modifier="Danweel" tags="Coding [[Code sample]] challenge Basic" title="branch code execution based on user input">
+<pre>```
 response = input(&quot;Would you like to continue?&quot;)
 
 if response == &quot;No&quot;:
@@ -11732,7 +11739,7 @@ See [[elif]]
 
 See [[else]]
 
-See conditional</pre>
+See [[conditional]]</pre>
 </div>
 <div created="20200614220138540" creator="Danweel" modified="20200614232550320" modifier="Danweel" tags="Basic Glossary [[stack overflow]] Coding" title="callable">
 <pre>A callable is anything that can be called. It is an object allows you to use round parenthesis ( ) and eventually pass some parameters, just like functions.
@@ -11868,6 +11875,17 @@ print(c)
 `
 </pre>
 </div>
+<div created="20200727130558395" creator="Danweel" modified="20200727131207438" modifier="Danweel" tags="Basic Coding python [[Code sample]] Glossary" title="conditional">
+<pre>[[if]] response == &quot;No&quot;:
+    print(&quot;Exiting&quot;)
+
+[[elif]] response == &quot;Yes&quot;:
+    print(&quot;Continuing ...&quot;)
+    print(&quot;Complete!&quot;)
+
+[[else]]:
+    print(&quot;Please try again and respond with yes or no.&quot;)</pre>
+</div>
 <div created="20200614030048204" creator="Danweel" modified="20200614231510082" modifier="Danweel" tags="Basic Coding Glossary wikipedia [[umbrella term]]" title="constants">
 <pre>A constant is a value that cannot be altered by the program durig normal execution. </pre>
 </div>
@@ -11987,6 +12005,33 @@ See [[for loop]]
 <div modified="20200614165722762" modifier="Danweel" title="Draft of 'PyPI' by Danweel">
 <pre></pre>
 </div>
+<div created="20200727130819079" creator="Danweel" modified="20200727131219128" modifier="Danweel" tags="Basic challenge [[Code sample]] python" title="elif">
+<pre>if response == &quot;No&quot;: print(&quot;Exiting&quot;)
+
+elif response == &quot;Yes&quot;: print(&quot;Continuing ...&quot;) print(&quot;Complete!&quot;)
+
+else: print(&quot;Please try again and respond with yes or no.&quot;)
+
+[[conditional]]
+
+[[if]]
+
+[[else]]</pre>
+</div>
+<div created="20200727130848923" creator="Danweel" modified="20200727131237364" modifier="Danweel" tags="Basic challenge Coding Glossary python" title="else">
+<pre>if response == &quot;No&quot;: print(&quot;Exiting&quot;)
+
+elif response == &quot;Yes&quot;: print(&quot;Continuing ...&quot;) print(&quot;Complete!&quot;)
+
+else: print(&quot;Please try again and respond with yes or no.&quot;)
+
+
+[[conditional]]
+
+[[if]]
+
+[[elif]]</pre>
+</div>
 <div created="20200614030959901" creator="Danweel" modified="20200614212422108" modifier="Danweel" tags="Coding Py4E Basic [[Code sample]]" title="for loop">
 <pre>```
 for i in [5, 4, 3, 2, 1] :
@@ -12007,6 +12052,16 @@ Blastoff!
 </div>
 <div created="20200615224706149" creator="Danweel" modified="20200615230012374" modifier="Danweel" tags="Coding Basic Glossary [[website source]]" title="function">
 <pre>Function is a nother word for [[method]]. It's a peace of code that does something and (usually) has a name. We give the function a name, just like if we were declaring a [[variable]]. In JavaScript, you then use curly braces </pre>
+</div>
+<div created="20200727130647662" creator="Danweel" modified="20200727131308666" modifier="Danweel" tags="Basic challenge [[Code sample]] Coding Glossary python" title="if">
+<pre>if response == &quot;No&quot;: print(&quot;Exiting&quot;)
+
+
+[[conditional]]
+
+[[elif]]
+
+[[else]]</pre>
 </div>
 <div created="20200614161923215" creator="Danweel" modified="20200614162229788" modifier="Danweel" tags="Coding Basic Glossary [[Code sample]] [[website source]]" title="index">
 <pre>An index specifies a member of an ordered [[collection]]. 
@@ -12110,8 +12165,7 @@ See [[literal]]
 See [[string]]</pre>
 </div>
 <div created="20200615010627170" creator="Danweel" modified="20200616223115279" modifier="Danweel" tags="Basic Coding Glossary Py4E" title="logical operator">
-<pre>
-[[Python]]
+<pre>[[Python]]
 List of logical operators
 
 [[in]]
