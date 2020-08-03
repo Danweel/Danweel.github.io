@@ -449,6 +449,8 @@ Error message and password prompt
 
 <li>callable</li>
 
+<li>checking for number</li>
+
 <li>class</li>
 
 <li>collection</li>
@@ -456,8 +458,6 @@ Error message and password prompt
 <li>concatenate</li>
 
 <li>concatenating strings</li>
-
-<li>conditional</li>
 
 <li>constants</li>
 
@@ -469,15 +469,9 @@ Error message and password prompt
 
 <li>Draft of 'PyPI' by Danweel</li>
 
-<li>elif</li>
-
-<li>else</li>
-
 <li>for loop</li>
 
 <li>function</li>
-
-<li>if</li>
 
 <li>index</li>
 
@@ -10405,7 +10399,7 @@ Error message and password prompt
 <div created="20200614005135974" creator="D" modified="20200614005137325" modifier="Danwee" title="$:/status/UserName">
 <pre>Danweel</pre>
 </div>
-<div created="20200727130553317" creator="Danweel" list="conditional" modified="20200727131317930" modifier="Danweel" title="$:/StoryList">
+<div list="" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200615182606262" creator="Danweel" modified="20200615182612151" modifier="Danweel" title="$:/temp/advancedsearch">
@@ -11419,8 +11413,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200614144742032" creator="Danweel" dependents="" description="Basic theme" modified="20200614144742032" modifier="Danweel" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.22">
 <pre></pre>
 </div>
-<div created="20200614025202041" creator="Danweel" modified="20200727131057543" modifier="Danweel" title="$:/temp/search">
-<pre>conditional</pre>
+<div created="20200614025202041" creator="Danweel" modified="20200803123059615" modifier="Danweel" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20200614144742024" creator="Danweel" modified="20200614144742024" modifier="Danweel" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
@@ -11717,7 +11711,7 @@ In Java and C++ the class attribute is similar to [[static member]].
 
 See [[class]].</pre>
 </div>
-<div created="20200618013054193" creator="Danweel" modified="20200727130522771" modifier="Danweel" tags="Coding [[Code sample]] challenge Basic" title="branch code execution based on user input">
+<div created="20200618013054193" creator="Danweel" modified="20200618013928020" modifier="Danweel" tags="Coding [[Code sample]] challenge Basic" title="branch code execution based on user input">
 <pre>```
 response = input(&quot;Would you like to continue?&quot;)
 
@@ -11739,7 +11733,7 @@ See [[elif]]
 
 See [[else]]
 
-See [[conditional]]</pre>
+See conditional</pre>
 </div>
 <div created="20200614220138540" creator="Danweel" modified="20200614232550320" modifier="Danweel" tags="Basic Glossary [[stack overflow]] Coding" title="callable">
 <pre>A callable is anything that can be called. It is an object allows you to use round parenthesis ( ) and eventually pass some parameters, just like functions.
@@ -11769,6 +11763,26 @@ You could use this method instead of methods like doit or run, I think it's just
 
 See [[function]]
 </pre>
+</div>
+<div created="20200803123100697" creator="Danweel" modified="20200803123512778" modifier="Danweel" tags="Coding [[Code sample]] python failures challenge" title="checking for number">
+<pre>```
+first_number = input('First number? ')
+
+
+if first_number.isnumeric() == False:
+    print('Please input a number.')
+    exit()
+
+
+second_number = input('Second number? ')
+
+if second_number.isnumeric() == False:
+    print('Please input a number.')
+    exit()
+
+first_number = int(first_number)
+second_number = int(second_number)
+```</pre>
 </div>
 <div created="20200614212759150" creator="Danweel" modified="20200614232616687" modifier="Danweel" tags="Basic [[Code sample]] Glossary [[website source]]" title="class">
 <pre>A Python class is created by a [[class definition]], has
@@ -11874,17 +11888,6 @@ print(c)
 `Hello There
 `
 </pre>
-</div>
-<div created="20200727130558395" creator="Danweel" modified="20200727131207438" modifier="Danweel" tags="Basic Coding python [[Code sample]] Glossary" title="conditional">
-<pre>[[if]] response == &quot;No&quot;:
-    print(&quot;Exiting&quot;)
-
-[[elif]] response == &quot;Yes&quot;:
-    print(&quot;Continuing ...&quot;)
-    print(&quot;Complete!&quot;)
-
-[[else]]:
-    print(&quot;Please try again and respond with yes or no.&quot;)</pre>
 </div>
 <div created="20200614030048204" creator="Danweel" modified="20200614231510082" modifier="Danweel" tags="Basic Coding Glossary wikipedia [[umbrella term]]" title="constants">
 <pre>A constant is a value that cannot be altered by the program durig normal execution. </pre>
@@ -12005,33 +12008,6 @@ See [[for loop]]
 <div modified="20200614165722762" modifier="Danweel" title="Draft of 'PyPI' by Danweel">
 <pre></pre>
 </div>
-<div created="20200727130819079" creator="Danweel" modified="20200727131219128" modifier="Danweel" tags="Basic challenge [[Code sample]] python" title="elif">
-<pre>if response == &quot;No&quot;: print(&quot;Exiting&quot;)
-
-elif response == &quot;Yes&quot;: print(&quot;Continuing ...&quot;) print(&quot;Complete!&quot;)
-
-else: print(&quot;Please try again and respond with yes or no.&quot;)
-
-[[conditional]]
-
-[[if]]
-
-[[else]]</pre>
-</div>
-<div created="20200727130848923" creator="Danweel" modified="20200727131237364" modifier="Danweel" tags="Basic challenge Coding Glossary python" title="else">
-<pre>if response == &quot;No&quot;: print(&quot;Exiting&quot;)
-
-elif response == &quot;Yes&quot;: print(&quot;Continuing ...&quot;) print(&quot;Complete!&quot;)
-
-else: print(&quot;Please try again and respond with yes or no.&quot;)
-
-
-[[conditional]]
-
-[[if]]
-
-[[elif]]</pre>
-</div>
 <div created="20200614030959901" creator="Danweel" modified="20200614212422108" modifier="Danweel" tags="Coding Py4E Basic [[Code sample]]" title="for loop">
 <pre>```
 for i in [5, 4, 3, 2, 1] :
@@ -12052,16 +12028,6 @@ Blastoff!
 </div>
 <div created="20200615224706149" creator="Danweel" modified="20200615230012374" modifier="Danweel" tags="Coding Basic Glossary [[website source]]" title="function">
 <pre>Function is a nother word for [[method]]. It's a peace of code that does something and (usually) has a name. We give the function a name, just like if we were declaring a [[variable]]. In JavaScript, you then use curly braces </pre>
-</div>
-<div created="20200727130647662" creator="Danweel" modified="20200727131308666" modifier="Danweel" tags="Basic challenge [[Code sample]] Coding Glossary python" title="if">
-<pre>if response == &quot;No&quot;: print(&quot;Exiting&quot;)
-
-
-[[conditional]]
-
-[[elif]]
-
-[[else]]</pre>
 </div>
 <div created="20200614161923215" creator="Danweel" modified="20200614162229788" modifier="Danweel" tags="Coding Basic Glossary [[Code sample]] [[website source]]" title="index">
 <pre>An index specifies a member of an ordered [[collection]]. 
