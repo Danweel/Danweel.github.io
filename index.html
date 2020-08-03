@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>&quot;Simple Calculator&quot;</li>
+
 <li>$:/config/AutoFocus</li>
 
 <li>$:/config/AutoSave</li>
@@ -479,6 +481,8 @@ Error message and password prompt
 
 <li>index value</li>
 
+<li>isinstance()</li>
+
 <li>list</li>
 
 <li>literal</li>
@@ -517,6 +521,8 @@ Error message and password prompt
 
 <li>text alignment</li>
 
+<li>Type (Built-In)</li>
+
 <li>variables</li>
 
 </ul>
@@ -533,6 +539,61 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20200803123604069" creator="Danweel" modified="20200803123809196" modifier="Danweel" tags="Coding [[Code sample]] challenge python Basic" title="&quot;Simple Calculator&quot;">
+<pre>```
+print('Simple calculator!')
+
+first_number = input('First number? ')
+
+if first_number.isnumeric() == False:
+    print('Please input a number.')
+    exit()
+
+operation = input('Operation? ')
+
+second_number = input('Second number? ')
+
+if second_number.isnumeric() == False:
+    print('Please input a number.')
+    exit()
+
+first_number = int(first_number)
+second_number = int(second_number)
+
+result = 0
+if operation == '+':
+    result = first_number + second_number
+    label = 'sum'
+elif operation == '-':
+    result = first_number - second_number
+    label = 'difference'
+elif operation == '*':
+    result = first_number * second_number
+    label = 'product'
+elif operation == '/':
+    result = first_number / second_number
+    label = 'quotient'
+elif operation == '**':
+    result = first_number ** second_number
+    label = 'exponent'
+elif operation == '%':
+    result = first_number % second_number
+    label = 'modulus'
+else:
+    print('Operation not recognized.')
+    exit()
+
+print(label + ' of ' + str(first_number) + ' ' + operation + ' ' + str(second_number) + ' equals ' + str(result))
+```
+
+First number? 4
+
+Operation? *
+
+Second number? 5
+
+product of 4 * 5 equals 20</pre>
+</div>
 <div created="20200614220944546" creator="Danweel" modified="20200614220944546" modifier="Danweel" title="$:/config/AutoFocus">
 <pre>text</pre>
 </div>
@@ -10390,8 +10451,8 @@ Error message and password prompt
 <div created="20200614005209430" creator="Danweel" modified="20200614005209430" modifier="Danweel" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200614030633357" creator="Danweel" modified="20200615005245412" modifier="Danweel" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20200614030633357" creator="Danweel" modified="20200803124919099" modifier="Danweel" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
@@ -10399,7 +10460,7 @@ Error message and password prompt
 <div created="20200614005135974" creator="D" modified="20200614005137325" modifier="Danwee" title="$:/status/UserName">
 <pre>Danweel</pre>
 </div>
-<div list="" title="$:/StoryList">
+<div created="20200803123534961" creator="Danweel" list="[[&quot;Simple Calculator&quot;]] isinstance() [[Type (Built-In)]]" modified="20200803125039021" modifier="Danweel" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200615182606262" creator="Danweel" modified="20200615182612151" modifier="Danweel" title="$:/temp/advancedsearch">
@@ -10463,7 +10524,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200614005148974" creator="Danweel" modified="20200716130652649" modifier="Danweel" title="$:/temp/NewTagName">
+<div created="20200614005148974" creator="Danweel" modified="20200803124824203" modifier="Danweel" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20200614144742032" creator="Danweel" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20200614144742032" modifier="Danweel" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.22">
@@ -11413,7 +11474,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200614144742032" creator="Danweel" dependents="" description="Basic theme" modified="20200614144742032" modifier="Danweel" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.22">
 <pre></pre>
 </div>
-<div created="20200614025202041" creator="Danweel" modified="20200803123059615" modifier="Danweel" title="$:/temp/search">
+<div created="20200614025202041" creator="Danweel" modified="20200803124907189" modifier="Danweel" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200614144742024" creator="Danweel" modified="20200614144742024" modifier="Danweel" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
@@ -11784,7 +11845,7 @@ first_number = int(first_number)
 second_number = int(second_number)
 ```</pre>
 </div>
-<div created="20200614212759150" creator="Danweel" modified="20200614232616687" modifier="Danweel" tags="Basic [[Code sample]] Glossary [[website source]]" title="class">
+<div created="20200614212759150" creator="Danweel" modified="20200803125025319" modifier="Danweel" tags="Basic [[Code sample]] Glossary [[website source]]" title="class">
 <pre>A Python class is created by a [[class definition]], has
 an associated [[name space]],
 supports [[attribute reference]],
@@ -12070,6 +12131,24 @@ t
 e
 `</pre>
 </div>
+<div created="20200803124538247" creator="Danweel" modified="20200803125021235" modifier="Danweel" tags="Coding [[Code sample]] Basic boolean python" title="isinstance()">
+<pre>```
+marks = 90
+result = isinstance(marks, int)
+if result :
+  print(&quot;Yes! given variable is an instance of type int&quot;)
+else:
+  print(&quot;No! given variable is not an instance of type int&quot;)
+```
+
+Yes! given varible is an instance of type int
+
+[[&quot;Simple Calculator&quot;]]
+
+[[Type]]
+
+</pre>
+</div>
 <div created="20200614025114061" creator="Danweel" modified="20200614202244655" modifier="Danweel" tags="collection Basic Glossary Py4E" title="list">
 <pre>List [[constants]] are surrounded by square brackets and the elements in the list are separated by commas. Lists are [[mutable]].
 
@@ -12345,6 +12424,87 @@ In the first f-string, we use the less-than symbol (&lt;) to align the text to t
 In the second f-string, we use the greater-than symbol (&gt;) to align the text to the right of a string that is 25 total characters wide.
 In the third f-string, we use the caret symbol (^) to center the text in the middle of a string that is 25 total characters wide.
 In the fourth f-string, we use the caret symbol (^) again. But this time, we preface it with a single dash symbol (-) to use instead of an empty space to fill the remaining width of the string.</pre>
+</div>
+<div created="20200803125043519" creator="Danweel" modified="20200803131403893" modifier="Danweel" title="Type (Built-In)">
+<pre>''Built-in Data Types''
+In programming, data type is an important concept.
+
+Variables can store data of different types, and different types can do different things.
+
+Python has the following data types built-in by default, in these categories:
+
+
+''Text Type:''			str
+
+
+x = &quot;Hello World&quot;									str
+
+
+
+''Numeric Types:''	int, float, complex
+
+
+x = 20														int
+
+x = 20.5													float
+
+x = 1j														complex
+
+
+
+''Sequence Types:''	list, tuple, range
+
+
+x = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]	list
+
+x = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)	tuple
+
+x = range(6)											range
+
+
+
+''Mapping Type:''		dict
+
+
+x = {&quot;name&quot; : &quot;John&quot;, &quot;age&quot; : 36}	dict
+
+
+
+''Set Types:''			set, frozenset
+
+
+x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}	set
+
+x = frozenset({&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;})	frozenset
+
+
+
+''Boolean Type:''		bool
+
+
+x = True													bool
+
+
+
+''Binary Types:''		bytes, bytearray, memoryview
+
+
+x = b&quot;Hello&quot;											bytes
+
+x = bytearray(5)									bytearray
+
+x = memoryview(bytes(5))					memoryview
+
+
+
+You can get the data type of any object by using the [[type()]] function:
+
+```
+x = 5
+print(type(x))
+```
+
+You can use [[istype()]]item, type) to true/false check if a type is true or not. </pre>
 </div>
 <div created="20200614024746968" creator="Danweel" modified="20200614031434105" modifier="Danweel" tags="Coding Basic Glossary Py4E" title="variables">
 <pre>Variables have one value in them - when we put a new value in the variable, the old value is overwritten:
